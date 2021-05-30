@@ -1,0 +1,181 @@
+//
+// Variables
+// --------------------------------------------------
+
+// COLORS
+// -------------------------
+@brand-primary:           @brand-warning;
+
+@brand-info:    		      #1a79cb;
+@brand-success: 		      #2a843c;
+@brand-warning: 		      #feba00;
+@brand-danger:  		      #da3333;
+
+@gray-darker:             #0c1933;
+@gray-dark:               #39445c;
+@gray-light:              #98a0b2;
+@gray-lighter:		  	    #ced1d6;
+
+
+// Scaffolding Colors
+// -------------------------
+@body-bg:               #fff;
+
+
+// Common
+// -------------------------
+@border-radius-base: 4px;
+@landing-box-shadow: 0 5px 20px rgba(0,0,0,.2);
+
+
+// Menu Bar
+// -------------------------
+@menu-bar-height: 132px;
+@menu-bar-link-color: @headings-color;
+@menu-bar-link-margin: 24px;
+
+@menu-bar-font-size: 11px;
+@menu-bar-font-weight: @font-bolder;
+
+@brand-width: 124px;
+
+// Mobile
+@menu-bar-mobile-padding: 24px;
+@menu-bar-mobile-height: 56px;
+@main-menu-mobile-padding: 20px;
+
+//@mobile-brand-width: 124px;
+
+// Info Bar
+// -------------------------
+@info-bar-height: 115px;
+@menu-bar-text-color: @gray-light;
+
+// Mobile
+@info-bar-mobile-height: 172px;
+
+
+// Hero
+// -------------------------
+@hero-arrows-width: 38px;
+
+
+// Intro Animation
+// --------------------------
+@intro-main-animation-time: .5s;
+@intro-sliders-animation-time: .5s;//.2s
+
+@intro-menus-overlap: 60px;
+
+
+// Typography
+// -------------------------
+@font-family-sans-serif:  'Poppins', sans-serif;
+@font-family-serif:       Georgia, "Times New Roman", Times, serif;
+@font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base:        @font-family-sans-serif;
+
+@font-size-base:          14px;
+@font-size-large:         ceil((@font-size-base * 1.2));
+@font-size-small:         ceil((@font-size-base * 0.85));
+
+@font-light:              400;
+@font-regular:            400;
+@font-bold:	              500;
+@font-bolder:	            700;
+
+@text-color:              @gray-darker;
+
+// Headings
+// -----------
+@font-size-h1:            52px;
+@font-size-h2:            32px;
+@font-size-h3:            22px;
+@font-size-h4:            18px;
+@font-size-h5:            16px;
+@font-size-h6:            @font-size-base;
+
+@line-height-base:        1.428571429; // 20/14
+@line-height-computed:    floor((@font-size-base * @line-height-base));
+
+@headings-font-family:    'Open Sans', sans-serif;
+@headings-line-height:    1.1;
+@headings-color:          @gray-darker;
+
+@headings-font-light:     @font-light;
+@headings-font-regular:   @font-regular;
+@headings-font-bold:	    @font-bold;
+@headings-font-bolder:	  @font-bolder;
+@headings-font-weight:    @headings-font-bold;
+
+// Links
+// -------------------------
+@link-color:              @text-color;
+@link-hover-color:        spin(darken(@brand-primary, 3%), -3%);
+
+
+// Type
+// -------------------------
+@hr-border:               rgba(0, 0, 0, 0.1);
+
+
+// Icons
+// -----
+@icon-font-path:           "../fonts/awesomeentypo/";
+
+
+// Buttons
+// -------------------------
+@btn-font-weight:          normal;
+
+@btn-default-color:        @headings-color;
+@btn-default-bg:           #eee;
+
+@btn-primary-color:        @headings-color;
+@btn-primary-bg:           @brand-primary;
+
+@cursor-disabled:          not-allowed;
+
+
+// Z-Index Master List
+// -------------------------
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1060;
+@zindex-tooltip:           1070;
+@zindex-navbar-fixed:      1030;
+@zindex-modal:             1040;
+
+
+// Media Query Breakpoints
+// -------------------------
+@screen-xxs-max:           (@screen-xs-min - 1);
+
+@screen-xs-min:            480px;
+@screen-xs-max:            (@screen-sm-min - 1);// Same as <picture><source> media in .hero .sliders
+
+@screen-sm-min:            768px;
+@screen-sm-max:            (@screen-md-min - 1);
+
+@screen-md-min:            992px;
+@screen-md-max:            (@screen-lg-min - 1);
+
+@screen-lg-min:            1400px;
+
+@grid-breakpoint:          @screen-sm-min;
+@grid-breakpoint-max:      (@grid-breakpoint - 1);
+
+
+// Container Sizing
+// -------------------------
+// Small screen / tablet
+@container-tablet:         (720px + 40);
+@container-sm:             @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:        (940px + 40);
+@container-md:             @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:  (1140px + 40);
+@container-lg:             @container-large-desktop;

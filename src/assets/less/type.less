@@ -1,0 +1,48 @@
+//
+// Typography
+// --------------------------------------------------
+
+// Headings
+// -------------------------
+h1, h2, h3, h4, h5, h6 {
+  line-height: @headings-line-height;
+	font-weight: @headings-font-weight;
+  //color: @headings-color;
+}
+h1 {
+  font-size: @font-size-h1;
+  margin: 17px 0 40px;
+}
+
+
+// Body text
+// -------------------------
+
+
+// Links
+// -------------------------
+a {
+  color: @link-color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: @link-hover-color;
+    text-decoration: none;
+  }
+
+  &:focus {
+    color: @link-hover-color;
+    .tab-focus();
+  }
+}
+
+// Emphasis
+// -------------------------
+.yellow {
+  color: @brand-warning;
+}
+
+
+// Utilities
+// -------------------------

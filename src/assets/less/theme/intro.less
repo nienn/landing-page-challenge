@@ -1,0 +1,67 @@
+//
+// Intro Animation
+// --runs once on page load
+// --then classes are removed with js
+// --------------------------------------------------
+.landing {
+  transition: padding @intro-main-animation-time linear;
+}
+.menu-bar {
+  transition: margin @intro-main-animation-time linear, opacity .2s linear .3s;// Opacity is for mobile
+}
+.hero {
+  transition: height @intro-main-animation-time linear;
+}
+.arrow {
+  transition: margin @intro-main-animation-time linear;
+}
+.info-bar {
+  transition: margin @intro-main-animation-time linear;
+}
+
+
+.landing.intro {
+  padding: 0;
+
+  @media (min-width: @grid-breakpoint) {
+    .menu-bar {
+      margin-top: -(@menu-bar-height - @intro-menus-overlap);
+    } 
+    .hero {
+      height: calc(100% - @intro-menus-overlap * 2);
+    }
+    .info-bar {
+      margin-bottom: -(@info-bar-height - @intro-menus-overlap);
+    }
+
+    // Arrows
+    .arrow-left {
+      margin: 0 -@hero-arrows-width 0 0;
+    }
+    .arrow-right {
+      margin: 0 0 0 -@hero-arrows-width;
+    }
+  }
+
+  // Fade the Headings
+  .hero .hi-0 {
+    .opacity(0);
+  }
+}
+
+// Sliders
+// - before the main animation starts
+// - start moving sliders independently, in a setInterval()
+// - this ends at the same time as the main animation
+// ------------------------------
+.slider.intro {
+  height: calc(100% + @intro-menus-overlap * 2);
+  margin: -@intro-menus-overlap 0;
+}
+
+// Sliders Shift
+// - deal with sliders shift only after main animation has ended
+// ------------------------------
+.hero.intro .slider {
+  transform: none;
+}

@@ -1,0 +1,18 @@
+//
+// Button Mixins
+// --------------------------------------------------
+
+// Flat variant
+// ----------------------
+.button-flat-variant(@color; @background) {
+	color: @color;
+	border-color:     @background;
+	background-color: @background;
+
+	&:hover,
+  &:focus {
+		color: @color;// Required
+    border-color:     spin(darken(@background, 2%), -2%);
+		background-color: spin(darken(@background, 2%), -2%);
+	}
+}
